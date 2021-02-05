@@ -31,6 +31,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^2.2.1",
     "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   }
 }
