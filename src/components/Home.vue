@@ -1,6 +1,6 @@
 <template>
   <main>
-    <button v-on:click="getUsers()">Hämta</button>
+    <button v-on:click="getOccupations()">Hämta</button>
     <ul id="listan">
       <li v-for="occupation in occupations" :key="occupation.userName">
         {{ occupation.userName }}
@@ -27,10 +27,9 @@ export default class Home extends Vue {
     console.log('store: ', store);
   }
 
-  getUsers() {
-    DataService.getUsers().then(res => {
+  getOccupations() {
+    DataService.getOccupations().then(res => {
       console.log('data', res.data);
-      this.users = res.data;
     });
   }
 
