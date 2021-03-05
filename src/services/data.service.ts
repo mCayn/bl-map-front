@@ -1,8 +1,12 @@
-import http from "../http-common";
+import http from '../http-common';
 
 class DataService {
   getUsers() {
-    return http.get("/user");
+    return http.get('/user');
+  }
+
+  getOccupations() {
+    return http.get('/map/occupations');
   }
 }
 
