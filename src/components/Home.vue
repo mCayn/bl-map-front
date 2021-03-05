@@ -6,19 +6,19 @@
 </template>
 
 <script lang="ts">
-import { Vue, Prop, Component } from 'vue-property-decorator'
-import http from '../http-common'
-import { User } from '../types/index'
+import { Vue, Prop, Component } from "vue-property-decorator";
+import http from "../http-common";
+import { User } from "../types/index";
 
 // import { Component, Prop, Vue } from "vue-property-decorator";
-import DataService from '@/services/data.service'
+import DataService from "@/services/data.service";
 
 @Component
 export default class Home extends Vue {
   private users: User[] = [];
 
-  getUsers () {
-    DataService.getUsers().then((res) => (this.users = res.data))
+  getUsers() {
+    DataService.getUsers().then((res) => (this.users = res.data));
   }
 }
 </script>
